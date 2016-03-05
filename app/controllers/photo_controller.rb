@@ -3,5 +3,6 @@ class PhotoController < BaseController
   end
 
   def upload
+    redirect_to information_url
   end
 end

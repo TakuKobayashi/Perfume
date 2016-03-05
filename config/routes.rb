@@ -8,7 +8,9 @@ Rails.application.routes.draw do
     get :cofirm
   end
 
-  resource :information, controller: :information, only: [:index]
+  resource :information, controller: :information, only: [:index] do
+    get :index
+  end
 
   root to: "top#index"
 end
