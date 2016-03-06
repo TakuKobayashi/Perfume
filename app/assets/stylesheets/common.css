@@ -127,7 +127,8 @@ select {
 #wrapper {
     width: 640px;
     height: 1136px;
-    background: transparent;
+    /*background: transparent;*/
+    background: #CCC000;
 }
 
 #top, #content {
@@ -139,7 +140,21 @@ select {
 #content img {
     width: 640px;
     height: auto;
-    margin-bottom:40px;
+    margin-top:805px;
+}
+
+#cambtn img {
+    width: 177px;
+    height: 176px;
+    margin-bottom:-30px;
+    margin-left: 227px;
+}
+
+#retake img {
+    width: 129px;
+    height: 128px;
+    margin-bottom:-30px;
+    margin-left: 25px;
 }
 
 #starbox {
@@ -178,6 +193,8 @@ select {
     width: 610px;
     height: auto;
     margin:0px 10px;
+    font-size: 34px;
+    line-height: 140%;
 }
 
 #bottom {
