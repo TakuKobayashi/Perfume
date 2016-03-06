@@ -11,7 +11,8 @@
   </div>
   <div id="content2">
     <div id="starbox">
-      <% (1..5).each do %>
+      <% star = @product.mst.review_average.present? ? @product.mst.review_average.to_i : 5 %>
+      <% (1..star).each do %>
         <div class="star"><%= image_tag("result/star.svg") %></div>
       <% end %>
     </div>
@@ -26,7 +27,7 @@
 
       <div id="starbox">
         <p><%= @product.mst.description %></p>
-        <p>定価（税抜）：¥12,000</p>
+        <p>価格：¥<%= @product.mst.price.zero? ? 12000 : @product.mst.price %></p>
       </div>
 
       <div id="starbox">

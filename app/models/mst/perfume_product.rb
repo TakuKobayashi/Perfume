@@ -30,6 +30,8 @@ class Mst::PerfumeProduct < Mst::Product
         item = result["Items"].detect{|i| i["Item"]["mediumImageUrls"].present? }
         mst_product.image_url = item["Item"]["mediumImageUrls"].first["imageUrl"]
         mst_product.description = item["Item"]["itemCaption"].to_s
+        mst_product.price = item["Item"]["itemPrice"]
+        mst_product.review_average = item["Item"]["reviewAverage"]
       end
       mst_product.save!
       mst_product
