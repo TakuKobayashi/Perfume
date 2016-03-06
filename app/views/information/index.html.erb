@@ -3,7 +3,11 @@
     <%= image_tag("result/top.png") %>
   </div>
   <div id="midtop">
-    <%= image_tag("result/item.jpg") %>
+    <% if @product.mst.image_url.present? %>
+      <%= image_tag(@product.mst.image_url) %>
+    <% else %>
+      <%= image_tag("result/item.jpg") %>
+    <% end %>
   </div>
   <div id="content2">
     <div id="starbox">
@@ -21,7 +25,7 @@
       </div>
 
       <div id="starbox">
-        <p>クロエ(Chloé)は、ギャビー・アギョンによって創設されたフランスの名門ファッションブランドである。1952年創業。プレタポルテ（レディ・トゥ・ウエア＝既製服）市場の草分け的存在とされる。</p>
+        <p><%= @product.mst.description %></p>
         <p>定価（税抜）：¥12,000</p>
       </div>
 

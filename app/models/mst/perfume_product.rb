@@ -19,7 +19,18 @@ class Mst::PerfumeProduct < Mst::Product
       name = res["textAnnotations"].map{|ann| ann["description"].gsub(" ", "").match(/[a-z|A-Z|0-9]+/).to_a[0]}[0]
       mst_product = Mst::PerfumeProduct.where("name like '%" + name.to_s + "%'").first_or_initialize
       mst_product.name = name
-      mst_product.image_url = ""
+
+      url = "https://app.rakuten.co.jp/services/api/IchibaItem/Search/20140222?format=json&keyword=" + name + "&applicationId=" + Constants::Rakuten_API_KEY + "&genreId=111120"
+
+      http_client = HTTPClient.new
+      response = http_client.get(url)
+      result = JSON.parse(response.body)
+
+      if result["Items"].present?
+        item = result["Items"].detect{|i| i["Item"]["mediumImageUrls"].present? }
+        mst_product.image_url = item["Item"]["mediumImageUrls"].first["imageUrl"]
+        mst_product.description = item["Item"]["itemCaption"].to_s
+      end
       mst_product.save!
       mst_product
     end
