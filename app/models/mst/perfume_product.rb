@@ -16,7 +16,7 @@ class Mst::PerfumeProduct < Mst::Product
   def self.generates(analized)
     return nil if analized["responses"].blank?
     analized["responses"].map do |res|
-      name = res["textAnnotations"].map{|ann| ann["description"].split("\n")[0] }.join("")
+      name = res["textAnnotations"].map{|ann| ann["description"].gsub(" ", "").match(/[a-z|A-Z|0-9]+/).to_a[0]
       mst_product = Mst::PerfumeProduct.where("name like '%" + name + "%'").first_or_initialize
       mst_product.name = name
       mst_product.image_url = ""
