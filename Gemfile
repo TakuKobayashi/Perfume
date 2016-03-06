@@ -29,6 +29,7 @@ gem 'annotate'
 gem 'kaminari'
 gem 'activerecord-import'
 gem 'execjs'
+gem "default_value_for", "~> 3.0.0"
 
 gem 'devise'
 gem 'activeadmin', github: 'activeadmin'

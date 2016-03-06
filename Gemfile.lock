@@ -87,6 +87,8 @@ GEM
     concurrent-ruby (1.0.1)
     database_cleaner (1.5.1)
     debug_inspector (0.0.2)
+    default_value_for (3.0.1)
+      activerecord (>= 3.2.0, < 5.0)
     devise (3.5.6)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -336,6 +338,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   database_cleaner
+  default_value_for (~> 3.0.0)
   devise
   execjs
   factory_girl_rails

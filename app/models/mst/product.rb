@@ -13,4 +13,6 @@
 #
 
 class Mst::Product < ActiveRecord::Base
+  default_value_for(:register_at){ Time.current }
+  default_value_for(:review_update_at){ Time.current }
 end
