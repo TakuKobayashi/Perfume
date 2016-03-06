@@ -1,1 +1,34 @@
-<div style="text-align: center;">Noroshiへようこそ</div>
+<div id="wrapper">
+  <div id="content">
+    <%= image_tag("result/item.jpg") %>
+  </div>
+  <div id="starbox">
+    <% (1..5).each do %>
+      <div class="star"><%= image_tag("result/star.svg") %></div>
+    <% end %>
+  </div>
+
+  <div id="starbox">
+    <div class="star">
+      <%= link_to(image_tag("result/twitter.png"), "#") %>
+    </div>
+    <div class="star">
+      <%= link_to(image_tag("result/insta.png"), "#") %>
+    </div>
+
+    <div id="starbox">
+      <p>クロエ(Chloé)は、ギャビー・アギョンによって創設されたフランスの名門ファッションブランドである。1952年創業。プレタポルテ（レディ・トゥ・ウエア＝既製服）市場の草分け的存在とされる。</p>
+    </div>
+            
+    <div id="starbox">
+      <p>トップノート　20分<br/>ミドルノート　40分<br/>ラストノート　3時間</p>
+    </div>
+            
+    <div id="starbox">
+      <div class="star"><%= image_tag("result/parfum.png") %></div>
+      <div class="star"><%= image_tag("result/toilette.png") %></div>
+      <div class="star"><%= image_tag("result/cologne.png") %></div>
+    </div>
+  </div>
+  <div id="bottom"><%= image_tag("result/bottom.png") %></div>
+</div>
