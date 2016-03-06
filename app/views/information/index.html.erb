@@ -37,8 +37,14 @@
         <div class="star"><%= image_tag("result/cologne.png") %></div>
       </div>
       <div id="graph"></div>
-      <div id="snstop"><%= image_tag("result/twitter_white.png") %></div>
-      <div id="snsbox"></div>
+      <%= @product.mst.name %>
+      <div id="snstop"><%= image_tag("result/twitter_white.png") %>
+      </div>
+      <div id="snsbox">
+        <% @tweets.attrs[:statuses].each do |tweet| %>
+          <%= tweet[:text] %><br><hr>
+        <% end %>
+      </div>
     </div>
   </div>
   <div id="bottom"><%= image_tag("result/bottom.png") %></div>
