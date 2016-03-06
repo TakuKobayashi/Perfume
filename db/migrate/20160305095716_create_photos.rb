@@ -4,6 +4,7 @@ class CreatePhotos < ActiveRecord::Migration
       t.integer :user_id, null: false
       t.string :name
       t.string :path, null: false
+      t.text :analized
       t.timestamps null: false
     end
     add_index :photos, :user_id

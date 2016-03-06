@@ -5,26 +5,27 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 # Ignore bundler config
-/.bundle
+.bundle
 #
 # # Ignore the default SQLite database.
-/db/*.mysql3
+db/*.mysql3
 
 #
 # # Ignore all logfiles and tempfiles.
-/log/*.log
-/tmp
+log/*.log
+tmp/
 #
-/.settings/
+.settings/
 #
-/coverage
+coverage
 *.DS_Store
-/db/schema.rb
-/coverage/
+db/schema.rb
+coverage/
 .rvmrc
-/config/database.yml
-/config/initializers/devise.rb
-/config/secrets.yml
+config/database.yml
+config/initializers/devise.rb
+config/secrets.yml
+app/settings/constants.rb
 
 .ruby-gemset
 .ruby-version
@@ -36,5 +37,5 @@ Thumbs.db
 .rbenv-version
 vendor/bundle/
 .bundle/config
-/public/system/
-/public/assets/
+public/system/
+public/assets/
