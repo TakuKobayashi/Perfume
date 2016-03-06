@@ -1,3 +1,17 @@
+<div id="wrapper">
+  <div id="top">
+    <%= image_tag("result/top.png") %>
+  </div>
+  <div id="content">
+    <div id="cambtn" class="star">
+      <%= image_tag("scan1/ready.png") %>
+    </div>
+  </div>
+  <div id="bottom">
+    <%= image_tag("result/bottom.png") %>
+  </div>
+</div>
+
 <%= form_tag(upload_photo_url, multipart: true) do %>
   <%= file_field_tag("upload", accept: "image/*", capture: "camera") %><br>
   <%= submit_tag("upload") %>  
