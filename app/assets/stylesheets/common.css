@@ -1,0 +1,187 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.4.1
+2010-03-01
+Author: Richard Clark - http://richclarkdesign.com
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+    width: 640px;
+    height: 1136px;
+    margin: 0;
+    -webkit-text-size-adjust: 100%;
+    background: transparent;
+}
+
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted #000;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+
+/* endResetCss */
+
+
+#wrapper {
+    width: 640px;
+    height: 1136px;
+    background: transparent;
+}
+
+#top, #content {
+    width: 640px;
+    height: auto;
+    margin-bottom:40px;
+}
+
+#content img {
+    width: 640px;
+    height: auto;
+    margin-bottom:40px;
+}
+
+#starbox {
+    width: 640px;
+    height: auto;
+    margin:0px 10px 40px;
+}
+
+#box {
+    width: 640px;
+    height: auto;
+    margin:0px 10px 20px;
+}
+
+.star{
+    display: -moz-inline-box; /*for Firefox 2*/
+    display: inline-block; /*for modern*/
+    /display: inline; /*for ie5～7*/
+    /zoom: 1; /*for ie5～7*/
+}
+
+#starbox img {
+    width: 100px;
+    height: 100px;
+    margin: 0px 10px;
+}
+
+#box img {
+    width: 180px;
+    height: 180px;
+    margin: 0px 10px 20px;
+    background-color: aqua;
+}
+
+#starbox p {
+    width: 610px;
+    height: auto;
+    margin:0px 10px;
+}
+
+#bottom {
+    width: 640px;
+    height: 30px;
+}
+

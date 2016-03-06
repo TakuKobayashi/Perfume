@@ -1,4 +1,3 @@
-<div style="text-align: center;">Perfumeへようこそ</div>
 <%= form_tag(upload_photo_url, multipart: true) do %>
   <%= file_field_tag("upload", accept: "image/*", capture: "camera") %><br>
   <%= submit_tag("upload") %>  
