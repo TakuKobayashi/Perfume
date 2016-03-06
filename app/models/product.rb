@@ -18,4 +18,5 @@
 #
 
 class Product < ActiveRecord::Base
+  belongs_to :mst, class_name: "Mst::Product", foreign_key: :mst_product_id
 end

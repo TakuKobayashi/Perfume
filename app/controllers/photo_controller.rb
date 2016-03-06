@@ -15,6 +15,6 @@ class PhotoController < BaseController
       product.update!(show_at: Time.current)
       product
     end
-    redirect_to information_url(product_id: products.map(&:id).join(","))
+    redirect_to information_url(product_ids: products.map(&:id).join(","))
   end
 end
